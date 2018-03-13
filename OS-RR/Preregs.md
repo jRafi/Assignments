@@ -37,9 +37,9 @@ data <- data.frame(year = c(2017, 2016, 2015, 2014, 2013, 2012, 2017, 2016, 2015
                    journal = c(rep("BMJ Open", 6), rep("Trials", 6)),
                    total = c(204, 183, 97, 83, 42, 22, 461, 442, 456, 391, 333, 162),
                    reg = c(97, 57, 37, 47, 10, 6, 421, 378, 331, 323, 283, 151)
-)
+                   )
 
-data$prop = data$reg / data$total
+data$prop <- data$reg / data$total
 ```
 
 Results
@@ -47,8 +47,8 @@ Results
 
 ``` r
 ggplot(data, aes(x = year, y = prop)) +
-  geom_point(aes(color = journal)) +
-  geom_line(aes(color = journal))
+        geom_point(aes(color = journal)) +
+        geom_line(aes(color = journal))
 ```
 
 ![](Preregs_files/figure-markdown_github/unnamed-chunk-2-1.png)
