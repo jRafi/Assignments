@@ -11,24 +11,24 @@ Aim
 
 Comparing the yearly amount of pre-registered study protocols in two journals.
 
-Introduction
-------------
+Overview
+--------
 
-The journals BMJ Open and Trials invites authors to publish study protocols. Both of them have guidelines stating that pre-registration information should be included in the abstract under the heading "Trial registration". However, BMJ Open enforces pre-registration for all study protocols, whereas Trials acknowledge that pre-registration is necessary for health care interventions on human subjects.
+The journals BMJ Open and Trials invites authors to publish study protocols. Both of them have guidelines stating that pre-registration information should be included in the abstract under the heading "Trial registration". However, [BMJ Open](http://bmjopen.bmj.com/pages/authors/#study_protocols) enforces pre-registration for all study protocols, whereas [Trials](https://trialsjournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/study-protocol) acknowledge that pre-registration is necessary for health care interventions on human subjects.
 
 Method
 ------
 
-Using Scopus web-search to find the number of published study protocols for BMJ Open and Trials, with and without the string "registration" in the abstract. At first I tried with the package "rscopus", but I wasn't able to connect to their API.
+Using Scopus web-search to find the number of published study protocols for BMJ Open and Trials, with and without the string "registration" in the abstract. At first I tried with the package ["rscopus"](https://github.com/muschellij2/rscopus), but I wasn't able to connect to the Scopus API.
 
-### Search criteria were:
+### Search criteria used to gather data on publication numbers:
 
 -   ISSN("1745-6215") AND TITLE("Study protocol")
 -   ISSN("1745-6215") AND TITLE("Study protocol") AND ("registration")
 -   ISSN("2044-6055") AND TITLE("Study protocol")
 -   ISSN("2044-6055") AND TITLE("Study protocol") AND ("registration")
 
-The number of publications for the years 2012-2017 were written into this file. 2012 was set as starting year due to the low amount of prior publications in BMJ Open.
+The number of publications for the years 2012-2017 was typed directly into this RMD-file. 2012 was set as starting year due to the low amount of prior publications in BMJ Open.
 
 ### Entering the data into R
 
