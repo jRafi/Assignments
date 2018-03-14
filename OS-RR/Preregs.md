@@ -48,9 +48,20 @@ Results
 ``` r
 ggplot(data, aes(x = year, y = prop)) +
         geom_point(aes(color = journal)) +
-        geom_line(aes(color = journal))
+        geom_line(aes(color = journal)) +
+        ylim(0,1)
 ```
 
 ![](Preregs_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 Despite having a more flexible approach to pre-registration, Trials seem to have a higher proportion of published study protocols mentioning trial registration in their abstracts.
+
+Discussion
+----------
+
+Despite the aim of this short assignment, the findings should not be used to infer anything about the actial proportions of pre-registered study protocols. I have not performed any controls on the data to see if my search queries work as intended.
+
+Conclusion
+----------
+
+The conclusion is to not draw any conclusions based on this information.

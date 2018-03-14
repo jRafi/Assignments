@@ -2,7 +2,7 @@
 title: "Preregs"
 author: "Jonas Rafi"
 date: "13 mars 2018"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 
